@@ -7,7 +7,7 @@ const app=express();
 
 app.use(cors(
   {
-        origin:["https://file-upload-kohl.vercel.app"],
+        origin:["https://file-upload-gules.vercel.app/"],
         methods:["POST","GET"],
         credentials:true
     }
