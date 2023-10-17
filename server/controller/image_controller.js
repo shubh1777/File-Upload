@@ -8,7 +8,7 @@ export const uploadImage = async (request, response) =>{
    }
    try{
      const file=await File.create(fileObj);
-     response.status(200).json({path:`http://localhost:8000/file/${file._id}`});
+     response.status(200).json({path:`https://file-upload-gules.vercel.app/file/${file._id}`});
    } catch(error){
       console.error(error.message);
       response.status(500).json({error:error.message})
